@@ -4,6 +4,7 @@
 
 Projeto está rodando em docker
 
+ - configurar o .env
  - docker-compose up --build
 
 ## Especificações
