@@ -34,6 +34,5 @@ As rotas migration cria a estrutura e a rota seeder alimenta o banco de dados
 
 
  - existe ainda um arquivo do postman que pode ser baixado afim de facilitar a utilização da API
-``` diff
- database\postman\JN2.postman_collection.json
- ```
+
+ [postman_collection.json](https://github.com/alexandremsouza1/laravel_with-docker/blob/master/database/postman/JN2.postman_collection.json)
