@@ -44,4 +44,4 @@ RUN mkdir -p /home/devuser/.composer && \
     chown -R devuser:devuser /home/devuser
 
 
-CMD ["apache2-foreground"]
+CMD composer install && apache2-foreground
