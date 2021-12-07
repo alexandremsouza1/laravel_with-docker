@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "0901bf5d-dedc-4d6a-a59d-a5eb4f71f7c5",
+		"name": "JN2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/clientes?nome=marcos&telefone=452345234&cpf=546345634&placa=HHH5558",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "marcos"
+						},
+						{
+							"key": "telefone",
+							"value": "452345234"
+						},
+						{
+							"key": "cpf",
+							"value": "546345634"
+						},
+						{
+							"key": "placa",
+							"value": "HHH5558"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "alexandre alterado",
+							"type": "text"
+						},
+						{
+							"key": "telefone",
+							"value": "452345234",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "546345634",
+							"type": "text"
+						},
+						{
+							"key": "placa",
+							"value": "HHH5555",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PLACA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/consulta/final-placa/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consulta",
+						"final-placa",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "run-migration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/run-migration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"run-migration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "run-seeder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/run-seeder/ClientsSeeder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"run-seeder",
+						"ClientsSeeder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
