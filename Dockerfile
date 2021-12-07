@@ -44,6 +44,4 @@ RUN mkdir -p /home/devuser/.composer && \
     chown -R devuser:devuser /home/devuser
 
 
-# 7. Migrate tables.
-# COPY ./run.sh /tmp
-# ENTRYPOINT ["/tmp/run.sh"]
+CMD ["apache2-foreground"]

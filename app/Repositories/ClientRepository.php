@@ -31,6 +31,11 @@ class ClientRepository extends BaseRepository
         return $this->fieldSearchable;
     }
 
+    public function consultaFinalPlaca($placa)
+    {
+        return $this->allQuery(['placa',$placa])->get();
+    }
+
     /**
      * Configure the Model
      **/
